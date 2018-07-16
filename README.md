@@ -1,15 +1,23 @@
-# Project 1 - Part 2
+# Project 2 - Gym Buddy
 
-## Links
-1. [GitHub](https://github.com/jessicasmall7/project-1_part-2_small-jessica)
-2. [Site](http://jessicasmalldesign.com/pattern-library)
+#### Link to repository
+[GitHub Link](https://github.com/jessicasmall7/project-2_small-jessica)
 
-## Resources
-1. [W3S Symbols](https://www.w3schools.com/html/html_symbols.asp) - I got the Copyright symbol from this resource.
-2. [W3S Shapes](https://www.w3schools.com/howto/howto_css_shapes.asp) - I used this to build my color swatch square and chip circle.
-3. [Mixins](https://scotch.io/tutorials/how-to-use-sass-mixins) - I used this resource to help me with writing mixins.
-5. [Forms](https://www.w3schools.com/tags/tag_form.asp) - I referred to this to make my form.
+#### Link to website
+[Website Link](http://jessicasmalldesign.com/project-2)
 
+#### Instructions on how to view
+1. `git clone` the repository to view it locally.
+2. Use `sass --watch sass:css --style compressed` to get sass started.
 
-## Comments
-None!
+---
+
+## Project 2 - Part 3
+
+#### Resources
+
+#### Deductions
+
+#### Comments
+
+---
