@@ -1,0 +1,39 @@
+// Form Elements Stylesheet
+// ========================================
+@mixin form{
+  font-family: $secondary-font;
+  border-radius: 5px;
+  border-color: $grey;
+  border-style: solid;
+  border-width: 2px;
+  padding: $spacer-s;
+  color: $black;
+}
+
+// Label Styling -- Delete this if you are not using a label
+.form {
+  font-family: $secondary-font;
+  font-size: 10pt;
+  color: $grey;
+}
+
+// Basic Form Input Styling
+.input {
+  width: 300px;
+  height: 20px;
+  margin-bottom: $spacer-m;
+  @include form;
+}
+
+.error {
+  border-color: $red;
+  color: $red;
+}
+// Select Form Input Styling
+
+.select {
+  width: 150px;
+  height: 40px;
+  margin-top: $spacer-m;
+  @include form;
+}

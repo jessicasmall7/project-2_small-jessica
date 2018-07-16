@@ -1,0 +1,10 @@
+// Alert Mixin Settings Stylesheet
+// ========================================
+
+@mixin alert {
+  width: 250px;
+  padding: $spacer-s;
+  margin-bottom: $spacer-s;
+  border-radius: 5px;
+  @include component-text;
+}

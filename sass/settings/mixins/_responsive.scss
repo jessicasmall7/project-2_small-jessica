@@ -1,0 +1,17 @@
+// Responsive Mixin Settings Stylesheet
+// ========================================
+
+@mixin media($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+
+// .card__swatch{
+//  padding: 2%;
+//}
+
+//nav {
+
+//}

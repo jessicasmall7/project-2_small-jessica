@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Components- Gym Buddy's Pattern Library</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="images/favicon.png" rel="icon" type="image/png">
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img class="header__logo" src="images/logo.png" atl="logo"></a>
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__links-pages">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav__links-pages">
+            <a href="elements.html">Elements</a>
+          </li>
+          <li class="nav__links-pages">
+            <a href="components.html">Components</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__section">
+        <h1>Components</h1>
+
+        <!-- This is where your alerts go -->
+        <section class="main__section">
+          <h3>Alerts</h3>
+          <div class="item-container">
+            <div class="alert--error">Oops! Please try again.</div>
+            <div class="alert--success">Submitted!</div>
+            <div class="alert--notification">You have a notification!</div>
+          </div>
+        </section>
+
+        <!-- This is where your buttons go -->
+        <section class="main__section">
+          <h3>Buttons</h3>
+          <div class="item-container">
+            <div class="button--primary">Primary</div>
+            <div class="button--secondary">Secondary</div>
+            <div class="button--disabled">Disabled</div>
+          </div>
+        </section>
+
+        <!-- This is where your chip goes -->
+        <section class="main__section">
+          <h3>Chips</h3>
+          <div class="item-container">
+              <div class="chip--primary">AB</div>
+              <div class="chip--secondary">AB</div>
+              <p class="title"> Abby Bean</p>
+              <p class="title--light"> runnergirl1995</p>
+          </div>
+        </section>
+
+        <!-- This is where your form elements go -->
+        <section class="main__section">
+          <h3>Form Elements</h3>
+          <div class="item-container">
+            <form class="form">
+              Name<br>
+              <input class="input" type="text" name="Name" value="Your Name Here">
+              <br>
+              Name<br>
+              <input class="input error" type="text" name="Name" value="Your Name Here">
+              <br>
+              <select class="select">
+                <option value="option 1">Option 1</option>
+                <option value="option 2">Option 2</option>
+                <option value="option 3">Option 3</option>
+                <option value="option 4">Option 4</option>
+              </select>
+            </form>
+          </div>
+        </section>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">Copyright 2018 &copy;</p>
+    </footer>
+  </body>
+</html>

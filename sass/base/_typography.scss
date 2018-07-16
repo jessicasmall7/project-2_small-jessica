@@ -1,0 +1,65 @@
+// Base Typography Stylesheet
+// This is where your base typography will go
+// ========================================
+
+// Font Families
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: $primary-font;
+   font-weight: 600;
+}
+
+h1 {
+ color: $orange;
+ font-size: 26pt;
+}
+
+h2 {
+  color: $blue;
+  font-size: 22pt;
+}
+
+h3 {
+  color: $blue;
+  font-size: 18pt;
+}
+
+h4 {
+  color: $grey;
+  font-size: 16pt;
+}
+
+h5 {
+  color: $blue;
+  font-size: 14pt;
+}
+
+h6 {
+  color: $blue;
+  font-size: 12pt;
+}
+
+p {
+  font-family: $secondary-font;
+  color: $black;
+  font-size: 12pt;
+  padding-bottom: 1%;
+}
+
+a {
+  font-family: $secondary-font;
+  color: $orange;
+  font-size: 12pt;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.footer-text{
+  color: $cream;
+  font-size: 9pt;
+  padding: 0;
+}

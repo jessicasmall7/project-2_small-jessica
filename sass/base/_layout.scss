@@ -1,0 +1,150 @@
+// Base Layout Stylesheet
+// This is where your layout of the project will go
+// ========================================
+
+.header {
+  text-align: center;
+  background-color: $black;
+  padding-top: $spacer-lg;
+  padding-bottom: $spacer-lg;
+  @include media($large) {
+    padding-left: $spacer-xxl;
+    padding-right: $spacer-xxl;
+    padding-top: $spacer-lg;
+    padding-bottom: $spacer-lg;
+    text-align: left;
+  }
+}
+
+.header__logo{
+  width: 205px;
+  @include media($medium) {
+    width: 225px;
+  }
+}
+
+.nav{
+  width: 100%;
+  padding-top: $spacer-s;
+  @include media($large) {
+    padding: $spacer-s;
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+}
+
+.nav__links-pages{
+  display: inline;
+  padding: $spacer-m;
+  @include media($large) {
+    padding-left: 8%;
+  }
+}
+
+.nav__links-pages a{
+  text-decoration: none;
+}
+
+.nav__links-pages a:hover{
+  color: $blue;
+}
+
+
+.main {
+  background-color: $cream;
+  padding-left: $spacer-m;
+  padding-right: $spacer-m;
+  @include media($medium) {
+    padding-left: $spacer-xxl;
+    padding-right: $spacer-xxl;
+  }
+
+  &__section {
+    margin: $spacer-lg $reset-0;
+
+    &--index {
+      height: 825px;
+    }
+  }
+}
+
+.item-container {
+    margin: $spacer-s $reset-0;
+}
+
+
+.card{
+  padding-top: 1%;
+  padding-bottom: 2%;
+  font-family: $secondary-font;
+  color: $cream;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  float: left;
+}
+
+.card__swatch{
+  background-color: $black;
+  padding: 2%;
+  width: 150px;
+  height: 200px;
+  display: block;
+  float: left;
+  margin: 5px;
+  @include media($medium) {
+    padding: .75%;
+  }
+  @include media($extra-large) {
+    padding: .4%
+  }
+}
+
+.card__swatch--color{
+  height: 145px;
+  width: 148px;
+  margin: auto;
+  display: block;
+}
+
+.orange {
+    background-color: $orange;
+}
+
+.blue {
+    background-color: $blue;
+}
+
+.grey {
+    background-color: $grey;
+}
+
+.cream {
+    background-color: $cream;
+}
+
+.black {
+  background-color: $black;
+  border: 2px;
+  border-color: $cream;
+}
+
+.darkBlue{
+  background-color: $darkBlue;
+}
+
+.red{
+  background-color: $red;
+}
+
+.green{
+  background-color: $green;
+}
+
+.footer {
+  background-color: $black;
+  text-align: center;
+  padding: $spacer-lg;
+}
