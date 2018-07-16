@@ -1,0 +1,17 @@
+// Button Mixin Settings Stylesheet
+// ========================================
+
+@mixin button {
+  @include component-text;
+  width: 120px;
+  padding: $spacer-s;
+  margin-bottom: $spacer-s;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@mixin hover {
+  border-style: solid;
+  border-width: 2px;
+  background-color: transparent;
+}

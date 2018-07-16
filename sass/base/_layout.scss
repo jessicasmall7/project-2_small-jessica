@@ -1,12 +1,14 @@
 // Base Layout Stylesheet
-// This is where your layout of the project will go
 // ========================================
 
 .header {
   text-align: center;
-  background-color: $black;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: $grey;
   padding-top: $spacer-lg;
   padding-bottom: $spacer-lg;
+
   @include media($large) {
     padding-left: $spacer-xxl;
     padding-right: $spacer-xxl;
@@ -16,45 +18,51 @@
   }
 }
 
-.header__logo{
-  width: 205px;
+.header__logo {
+  width: 275px;
+
   @include media($medium) {
-    width: 225px;
+    width: 350px;
   }
 }
 
-.nav{
+.nav {
   width: 100%;
-  padding-top: $spacer-s;
+  padding-top: $spacer-m;
+
   @include media($large) {
-    padding: $spacer-s;
+    padding: $spacer-lg;
     width: 50%;
     float: right;
     text-align: right;
   }
 }
 
-.nav__links-pages{
+.nav__links-pages {
   display: inline;
   padding: $spacer-m;
+
   @include media($large) {
     padding-left: 8%;
   }
 }
 
-.nav__links-pages a{
+.nav__links-pages a {
   text-decoration: none;
 }
 
-.nav__links-pages a:hover{
+.nav__links-pages a:hover {
   color: $blue;
 }
 
+body {
+    background-color: $cream;
+}
 
 .main {
-  background-color: $cream;
   padding-left: $spacer-m;
   padding-right: $spacer-m;
+
   @include media($medium) {
     padding-left: $spacer-xxl;
     padding-right: $spacer-xxl;
@@ -74,7 +82,7 @@
 }
 
 
-.card{
+.card {
   padding-top: 1%;
   padding-bottom: 2%;
   font-family: $secondary-font;
@@ -86,28 +94,6 @@
   float: left;
 }
 
-.card__swatch{
-  background-color: $black;
-  padding: 2%;
-  width: 150px;
-  height: 200px;
-  display: block;
-  float: left;
-  margin: 5px;
-  @include media($medium) {
-    padding: .75%;
-  }
-  @include media($extra-large) {
-    padding: .4%
-  }
-}
-
-.card__swatch--color{
-  height: 145px;
-  width: 148px;
-  margin: auto;
-  display: block;
-}
 
 .orange {
     background-color: $orange;
@@ -131,20 +117,23 @@
   border-color: $cream;
 }
 
-.darkBlue{
+.darkBlue {
   background-color: $darkBlue;
 }
 
-.red{
+.red {
   background-color: $red;
 }
 
-.green{
+.green {
   background-color: $green;
 }
 
 .footer {
   background-color: $black;
   text-align: center;
+  width: 100%;
   padding: $spacer-lg;
+  position: absolute;
+  bottom:0;
 }

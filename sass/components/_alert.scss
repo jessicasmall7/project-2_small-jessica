@@ -3,17 +3,17 @@
 
   .alert {
     &--error {
-        background-color: $red;
-        @include alert;
+      @include alert;
+      background-color: $red;
     }
 
     &--success {
+      @include alert;
       background-color: $green;
-        @include alert;
     }
 
     &--notification {
-      background-color: $grey;
       @include alert;
+      background-color: $grey;
     }
   }

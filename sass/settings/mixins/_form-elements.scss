@@ -1,0 +1,12 @@
+// Form Mixin Elements Stylesheet
+// ========================================
+
+@mixin form {
+  font-family: $secondary-font;
+  border-radius: 5px;
+  border-color: $grey;
+  border-style: solid;
+  border-width: 2px;
+  padding: $spacer-s;
+  color: $black;
+}

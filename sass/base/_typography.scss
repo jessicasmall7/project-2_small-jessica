@@ -1,5 +1,4 @@
 // Base Typography Stylesheet
-// This is where your base typography will go
 // ========================================
 
 // Font Families
@@ -22,12 +21,12 @@ h2 {
 }
 
 h3 {
-  color: $blue;
+  color: $grey;
   font-size: 18pt;
 }
 
 h4 {
-  color: $grey;
+  color: $blue;
   font-size: 16pt;
 }
 
@@ -58,8 +57,8 @@ a {
   }
 }
 
-.footer-text{
+.footer-text {
   color: $cream;
-  font-size: 9pt;
+  font-size: 12pt;
   padding: 0;
 }

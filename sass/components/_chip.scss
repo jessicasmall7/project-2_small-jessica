@@ -1,22 +1,13 @@
 // Chip Component Stylesheet
 // ========================================
-@mixin chip{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  margin: $spacer-xs;
-  @include component-text;
-}
 
-.chip{
-  &--primary{
+.chip {
+  &--primary {
     @include chip;
     background-color: $orange;
   }
 
-  &--secondary{
+  &--secondary {
     @include chip;
     background-color: $blue;
     display: block;
@@ -24,13 +15,13 @@
   }
 }
 
-.title{
+.title {
   font-weight: bold;
   padding-left: $spacer-s;
   padding-bottom: 0;
   padding-top: $spacer-s;
 
-  &--light{
+  &--light {
     font-weight: normal;
     color: $grey;
     font-size: 10pt;

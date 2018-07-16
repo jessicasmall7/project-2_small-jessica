@@ -1,0 +1,12 @@
+// Chip Mixin Settings Stylesheet
+// ========================================
+
+@mixin chip {
+  @include component-text;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin: $spacer-xs;
+}
