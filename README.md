@@ -15,9 +15,11 @@
 ## Project 2 - Part 3
 
 #### Resources
+-[Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 #### Deductions
+I have reviewed the list of deductions for this project and in the syllabus.
 
 #### Comments
-
+None
 ---

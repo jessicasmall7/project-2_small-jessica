@@ -4,23 +4,25 @@
 .button {
   &--primary {
     @include button;
-    background-color: $blue;
+    background-color: $orange;
+    float: left;
 
     &:hover {
       @include hover;
-      color: $blue;
-      border-color: $blue;
+      color: $orange;
+      border-color: $orange;
     }
   }
 
   &--secondary {
     @include button;
-    background-color: $green;
+    background-color: $blue;
+    float: left;
 
     &:hover {
       @include hover;
-      color: $green;
-      border-color: $green;
+      color: $blue;
+      border-color: $blue;
     }
   }
 

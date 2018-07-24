@@ -62,6 +62,9 @@ body {
 .main {
   padding-left: $spacer-m;
   padding-right: $spacer-m;
+  display: flex;
+  justify-content: center;
+  margin-top: $spacer-lg;
 
   @include media($medium) {
     padding-left: $spacer-xxl;
@@ -69,15 +72,31 @@ body {
   }
 
   &__section {
-    margin: $spacer-lg $reset-0;
+    margin: $reset-0;
 
-    &--index {
-      height: 825px;
+    &--right {
+      width: 50%;
+      padding-left: $spacer-m;
+      margin-top: $spacer-m;
+    }
+
+    &--left {
+      width: 35%;
+      margin-top: $spacer-xs;
     }
   }
 }
 
+.demo {
+  width: 100%;
+  max-width: 420px;
+}
 
+.block {
+  display: block;
+  float: left;
+  margin-top: $spacer-m;
+}
 
 .orange {
     background-color: $orange;

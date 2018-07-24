@@ -109,15 +109,32 @@ body {
 
 .main {
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px; }
   @media only screen and (min-width: 700px) {
     .main {
       padding-left: 80px;
       padding-right: 80px; } }
   .main__section {
-    margin: 25px 0; }
-    .main__section--index {
-      height: 825px; }
+    margin: 0; }
+    .main__section--right {
+      width: 50%;
+      padding-left: 15px;
+      margin-top: 15px; }
+    .main__section--left {
+      width: 35%;
+      margin-top: 5px; }
+
+.demo {
+  width: 100%;
+  max-width: 420px; }
+
+.block {
+  display: block;
+  float: left;
+  margin-top: 15px; }
 
 .orange {
   background-color: #ee7047; }
@@ -153,21 +170,29 @@ body {
   position: absolute;
   bottom: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600; }
+  font-weight: 400; }
 
 h1 {
+  font-family: "Poppins", sans-serif;
   color: #ee7047;
-  font-size: 26pt; }
+  font-weight: 800;
+  line-height: 38pt;
+  font-size: 36pt;
+  margin-bottom: 15px; }
 
 h2 {
   color: #4d9bb4;
-  font-size: 22pt; }
+  font-size: 28pt;
+  line-height: 30pt;
+  margin-bottom: 15px; }
 
 h3 {
   color: #bdbdbd;
-  font-size: 18pt; }
+  font-size: 20pt;
+  line-height: 22pt;
+  margin-bottom: 15px; }
 
 h4 {
   color: #4d9bb4;
@@ -201,6 +226,7 @@ a {
 
 .alert--error {
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
   color: #fefcfb;
   width: 250px;
   padding: 10px;
@@ -209,6 +235,7 @@ a {
   background-color: #950000; }
 .alert--success {
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
   color: #fefcfb;
   width: 250px;
   padding: 10px;
@@ -217,6 +244,7 @@ a {
   background-color: #b4b45f; }
 .alert--notification {
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
   color: #fefcfb;
   width: 250px;
   padding: 10px;
@@ -226,46 +254,64 @@ a {
 
 .button--primary {
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
   color: #fefcfb;
-  width: 120px;
+  width: 250px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-top: 15px;
   border-radius: 5px;
   text-align: center;
-  background-color: #4d9bb4; }
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
+  background-color: #ee7047;
+  float: left; }
   .button--primary:hover {
+    border-style: solid;
+    border-width: 2px;
+    background-color: transparent;
+    color: #ee7047;
+    border-color: #ee7047; }
+.button--secondary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #fefcfb;
+  width: 250px;
+  padding: 10px;
+  margin-right: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-align: center;
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
+  background-color: #4d9bb4;
+  float: left; }
+  .button--secondary:hover {
     border-style: solid;
     border-width: 2px;
     background-color: transparent;
     color: #4d9bb4;
     border-color: #4d9bb4; }
-.button--secondary {
-  font-family: "Open Sans", sans-serif;
-  color: #fefcfb;
-  width: 120px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  text-align: center;
-  background-color: #b4b45f; }
-  .button--secondary:hover {
-    border-style: solid;
-    border-width: 2px;
-    background-color: transparent;
-    color: #b4b45f;
-    border-color: #b4b45f; }
 .button--disabled {
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
   color: #fefcfb;
-  width: 120px;
+  width: 250px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-top: 15px;
   border-radius: 5px;
   text-align: center;
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
   background-color: #bdbdbd; }
 
 .chip--primary {
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
   color: #fefcfb;
   height: 50px;
   width: 50px;
@@ -276,6 +322,7 @@ a {
   background-color: #ee7047; }
 .chip--secondary {
   font-family: "Open Sans", sans-serif;
+  font-size: 20px;
   color: #fefcfb;
   height: 50px;
   width: 50px;

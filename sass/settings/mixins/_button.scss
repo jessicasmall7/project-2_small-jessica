@@ -3,11 +3,15 @@
 
 @mixin button {
   @include component-text;
-  width: 120px;
+  width: 250px;
   padding: $spacer-s;
-  margin-bottom: $spacer-s;
+  margin-right: $spacer-m;
+  margin-top: $spacer-m;
   border-radius: 5px;
   text-align: center;
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
 }
 
 @mixin hover {

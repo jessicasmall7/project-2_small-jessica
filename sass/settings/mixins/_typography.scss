@@ -4,6 +4,7 @@
 // Font Styles
 @mixin component-text {
   font-family: $secondary-font;
+  font-size: 20px;
   color: $cream;
 }
 

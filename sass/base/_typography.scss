@@ -5,24 +5,32 @@
 $primary-font: 'Poppins', sans-serif;
 $secondary-font: 'Open Sans', sans-serif;
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
    font-family: $primary-font;
-   font-weight: 600;
+   font-weight: 400;
 }
 
 h1 {
- color: $orange;
- font-size: 26pt;
+  font-family: $primary-font;
+  color: $orange;
+  font-weight: 800;
+  line-height: 38pt;
+  font-size: 36pt;
+  margin-bottom: $spacer-m;
 }
 
 h2 {
   color: $blue;
-  font-size: 22pt;
+  font-size: 28pt;
+  line-height: 30pt;
+  margin-bottom: $spacer-m;
 }
 
 h3 {
   color: $grey;
-  font-size: 18pt;
+  font-size: 20pt;
+  line-height: 22pt;
+  margin-bottom: $spacer-m;
 }
 
 h4 {
