@@ -1,7 +1,8 @@
 // Responsive Variables Settings Stylesheet
 // ========================================
 
-$small: '(max-width: 700px)';
+$xsmall: '(max-width: 500px)';
+$small: '(min-width: 500px)';
 $medium: '(min-width: 700px)';
-$large: '(min-width: 825px)';
+$large: '(min-width: 1000px)';
 $extra-large: '(min-width: 1280px)';

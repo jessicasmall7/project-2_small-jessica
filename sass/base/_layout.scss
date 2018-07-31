@@ -56,46 +56,98 @@
 }
 
 body {
-    background-color: $cream;
+  background-color: $cream;
 }
 
 .main {
-  padding-left: $spacer-m;
-  padding-right: $spacer-m;
+  padding-left: $spacer-xs;
+  padding-right: $spacer-xs;
   display: flex;
-  justify-content: center;
-  margin-top: $spacer-lg;
+  padding-top: $spacer-lg;
+  padding-bottom: $spacer-xxl;
+  width: 80%;
+  margin: auto;
+
+  @include media($small) {
+    display: inline;
+    padding-left: $spacer-m;
+    padding-right: $spacer-m;
+  }
 
   @include media($medium) {
     padding-left: $spacer-xxl;
     padding-right: $spacer-xxl;
+    justify-content: center;
+  }
+
+  @include media($extra-large) {
+    display: flex;
   }
 
   &__section {
     margin: $reset-0;
 
     &--right {
-      width: 50%;
-      padding-left: $spacer-m;
-      margin-top: $spacer-m;
+      width: 90%;
+      margin: auto;
+
+      @include media($medium){
+        width: 70%;
+      }
+
+      @include media($large) {
+        width: 55%;
+        margin-top: $spacer-m;
+      }
+
+      @include media($extra-large) {
+        width: 50%;
+        padding-left: $spacer-m;
+        margin-top: $spacer-lg;
+      }
     }
 
     &--left {
-      width: 35%;
-      margin-top: $spacer-xs;
+      visibility: hidden;
+      width: 0%;
+
+      @include media($small){
+        padding: $spacer-m;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        visibility: visible;
+      }
+
+      @include media($medium) {
+        width: 35%;
+        margin-top: $spacer-xs;
+      }
     }
   }
 }
 
 .demo {
-  width: 100%;
-  max-width: 420px;
+  width: 200px;
+
+  @include media($medium){
+    width: 250px;
+  }
+
+  @include media($extra-large){
+    width: 100%;
+    max-width: 420px;
+  }
 }
 
 .block {
   display: block;
-  float: left;
+  text-align: center;
   margin-top: $spacer-m;
+
+  @include media($extra-large){
+    float: left;
+  }
 }
 
 .orange {
@@ -136,7 +188,10 @@ body {
   background-color: $black;
   text-align: center;
   width: 100%;
-  padding: $spacer-lg;
-  position: absolute;
-  bottom:0;
+  padding-top: $spacer-lg;
+  padding-bottom: $spacer-lg;
+  margin-top: $spacer-m;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
