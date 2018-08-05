@@ -22,6 +22,7 @@ I have reviewed the list of deductions for this project and in the syllabus.
 
 #### Comments
 None
+
 ---
 
 ## Project 2 - Part 4
@@ -34,4 +35,19 @@ I have reviewed the list of deductions for this project and in the syllabus.
 
 #### Comments
 My apostrophe's seem to be showing as weird characters when I upload to my web host.
+
+---
+
+## Project 2 - Part 3
+
+#### Resources
+- [Social Icons](https://simpleicons.org/)
+-
+
+#### Deductions
+I have reviewed the list of deductions for this project and in the syllabus.
+
+#### Comments
+
+
 ---

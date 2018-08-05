@@ -59,14 +59,18 @@ body {
   background-color: $cream;
 }
 
+.flex {
+    display: flex;
+}
+
 .main {
   padding-left: $spacer-xs;
   padding-right: $spacer-xs;
-  display: flex;
   padding-top: $spacer-lg;
   padding-bottom: $spacer-xxl;
   width: 80%;
   margin: auto;
+  max-width: 1250px;
 
   @include media($small) {
     display: inline;
@@ -101,9 +105,9 @@ body {
       }
 
       @include media($extra-large) {
-        width: 50%;
+        width: 55%;
         padding-left: $spacer-m;
-        margin-top: $spacer-lg;
+        margin-top: $spacer-xxl;
       }
     }
 
@@ -111,7 +115,7 @@ body {
       visibility: hidden;
       width: 0%;
 
-      @include media($small){
+      @include media($small) {
         padding: $spacer-m;
         width: 90%;
         margin: auto;
@@ -119,11 +123,23 @@ body {
         visibility: visible;
       }
 
-      @include media($medium) {
+      @include media($large) {
         width: 35%;
+        max-width: 400px;
         margin-top: $spacer-xs;
       }
+
     }
+  }
+}
+
+.hide {
+  visibility: hidden;
+  height: 0px;
+
+  @include media($small) {
+    visibility: visible;
+    height: inherit;
   }
 }
 
@@ -188,10 +204,16 @@ body {
   background-color: $black;
   text-align: center;
   width: 100%;
-  padding-top: $spacer-lg;
-  padding-bottom: $spacer-lg;
-  margin-top: $spacer-m;
+  padding-top: $spacer-m;
+  padding-bottom: $spacer-m;
+  margin-top: $spacer-xs;
   position: fixed;
   left: 0;
   bottom: 0;
+}
+
+.footer--icon {
+  width: 30px;
+  padding: $spacer-xs;
+  fill: white;
 }

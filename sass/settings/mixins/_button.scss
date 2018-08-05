@@ -3,7 +3,7 @@
 
 @mixin button {
   @include component-text;
-  width: 250px;
+  width: 240px;
   padding: $spacer-s;
   margin-right: $spacer-m;
   margin-top: $spacer-m;

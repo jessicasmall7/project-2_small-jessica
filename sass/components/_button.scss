@@ -6,12 +6,13 @@
   &--primary {
     @include button;
     margin: auto;
-    margin-bottom: $spacer-m;
+    margin-bottom: $spacer-s;
     background-color: $orange;
 
     @include media($extra-large) {
       float: left;
       margin-right: $spacer-m;
+      margin-bottom: 0;
     }
 
     &:hover {
