@@ -131,9 +131,18 @@ body {
     margin: auto;
     padding: 25px; }
     .main--about__features {
-      width: 60%;
-      margin: auto;
-      padding: 15px; }
+      padding: 0px;
+      margin: 0px;
+      visibility: hidden;
+      height: 0px;
+      width: 0px; }
+      @media only screen and (min-width: 1000px) {
+        .main--about__features {
+          visibility: visible;
+          height: auto;
+          width: 700px;
+          margin: auto;
+          padding: 15px; } }
   .main__section--right {
     width: 90%;
     margin: auto; }
@@ -225,6 +234,20 @@ body {
 .green {
   background-color: #b4b45f; }
 
+.icon {
+  visibility: hidden;
+  width: 0px;
+  height: 0px; }
+  @media only screen and (min-width: 1000px) {
+    .icon {
+      visibility: visible;
+      fill: #bdbdbd;
+      height: 40px;
+      width: 40px;
+      padding: 10px;
+      display: block;
+      float: left; } }
+
 .testimonial {
   display: block;
   width: 170px;
@@ -246,7 +269,10 @@ body {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-top: 5px; }
+  margin-top: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0; }
   @media only screen and (min-width: 1000px) {
     .footer {
       display: flex; } }
@@ -273,7 +299,7 @@ body {
 .footer--icon {
   width: 30px;
   padding: 10px;
-  fill: white; }
+  fill: #fefcfb; }
   .footer--icon__app {
     visibility: hidden;
     width: 0; }
@@ -283,12 +309,6 @@ body {
         height: 30px;
         width: auto;
         padding: 10px; } }
-
-@media only screen and (max-width: 500px) {
-  #position {
-    position: fixed;
-    left: 0;
-    bottom: 0; } }
 
 h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
