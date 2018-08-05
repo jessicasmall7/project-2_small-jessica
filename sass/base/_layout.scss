@@ -47,20 +47,18 @@
   }
 }
 
-.nav__links-pages a {
-  text-decoration: none;
-}
+.nav__links {
+  &-pages a {
+    text-decoration: none;
 
-.nav__links-pages a:hover {
-  color: $blue;
+    &:hover {
+      color: $blue;
+    }
+  }
 }
 
 body {
   background-color: $cream;
-}
-
-.flex {
-    display: flex;
 }
 
 .main {
@@ -68,7 +66,6 @@ body {
   padding-right: $spacer-xs;
   padding-top: $spacer-lg;
   padding-bottom: $spacer-xxl;
-  width: 80%;
   margin: auto;
   max-width: 1250px;
 
@@ -88,14 +85,24 @@ body {
     display: flex;
   }
 
-  &__section {
-    margin: $reset-0;
+  &--about {
+    width: 90%;
+    margin: auto;
+    padding: $spacer-lg;
 
+    &__features {
+      width: 60%;
+      margin: auto;
+      padding: $spacer-m;
+    }
+  }
+
+  &__section {
     &--right {
       width: 90%;
       margin: auto;
 
-      @include media($medium){
+      @include media($medium) {
         width: 70%;
       }
 
@@ -113,11 +120,13 @@ body {
 
     &--left {
       visibility: hidden;
-      width: 0%;
+      width: 0;
+      height: 0;
 
       @include media($small) {
         padding: $spacer-m;
         width: 90%;
+        height: auto;
         margin: auto;
         text-align: center;
         visibility: visible;
@@ -128,7 +137,15 @@ body {
         max-width: 400px;
         margin-top: $spacer-xs;
       }
+    }
 
+    &--testimonial {
+      margin: $spacer-m;
+
+      @include media($large) {
+        width: 40%;
+        float: left;
+      }
     }
   }
 }
@@ -146,11 +163,11 @@ body {
 .demo {
   width: 200px;
 
-  @include media($medium){
+  @include media($medium) {
     width: 250px;
   }
 
-  @include media($extra-large){
+  @include media($extra-large) {
     width: 100%;
     max-width: 420px;
   }
@@ -161,7 +178,7 @@ body {
   text-align: center;
   margin-top: $spacer-m;
 
-  @include media($extra-large){
+  @include media($extra-large) {
     float: left;
   }
 }
@@ -200,20 +217,86 @@ body {
   background-color: $green;
 }
 
+.testimonial {
+  display: block;
+  width: 170px;
+  margin: auto;
+  padding: $spacer-m;
+}
+
+.chip {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: $spacer-m;
+
+  @include media($large) {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
 .footer {
   background-color: $black;
-  text-align: center;
   width: 100%;
   padding-top: $spacer-m;
   padding-bottom: $spacer-m;
   margin-top: $spacer-xs;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+
+  @include media($large) {
+    display: flex;
+  }
+
+  &--copyright {
+    text-align: center;
+
+    @include media($large) {
+      width: 47%;
+      float: right;
+      text-align: right;
+    }
+  }
+
+  &--nav {
+    visibility: hidden;
+    height: 0px;
+
+    a {
+      color: $cream;
+    }
+
+    @include media($large) {
+      visibility: visible;
+      height: auto;
+      width: 50%;
+      margin-right: 0px;
+      margin-top: $spacer-lg;
+    }
+  }
 }
 
 .footer--icon {
   width: 30px;
-  padding: $spacer-xs;
+  padding: $spacer-s;
   fill: white;
+
+  &__app {
+    visibility: hidden;
+    width: 0;
+
+    @include media($large) {
+      visibility: visible;
+      height: 30px;
+      width: auto;
+      padding: $spacer-s;
+    }
+  }
+}
+
+#position {
+  @include media($xsmall) {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
 }

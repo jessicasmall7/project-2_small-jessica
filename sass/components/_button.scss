@@ -10,8 +10,6 @@
     background-color: $orange;
 
     @include media($extra-large) {
-      float: left;
-      margin-right: $spacer-m;
       margin-bottom: 0;
     }
 
@@ -41,5 +39,12 @@
   &--disabled {
     @include button;
     background-color: $grey;
+  }
+}
+
+.left {
+  @include media($extra-large) {
+    margin-right: $spacer-m;
+    float: left;
   }
 }

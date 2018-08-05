@@ -8,7 +8,7 @@ $secondary-font: 'Open Sans', sans-serif;
 
 h2, h3, h4, h5, h6 {
    font-family: $primary-font;
-   font-weight: 400;
+   font-weight: 600;
 }
 
 h1 {
@@ -85,6 +85,10 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+.centered {
+  text-align: center;
 }
 
 .footer--text {
