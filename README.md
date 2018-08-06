@@ -52,10 +52,8 @@ I have reviewed the list of deductions for this project and in the syllabus.
 Need to resolve a few issues: testimonial centering, footer cutting off content, and "Submit" button swapping places with cancel.
 
 To Do:
-jQuery plugins (2):
-- Hamburger menu
-- Popup
-Custom jQuery (5 lines): disable button
-Custom Javascript (5 lines): blur background
+- jQuery plugins (2): Hamburger Menu and Popup
+- Custom jQuery (5 lines): Disable Button
+- Custom Javascript (5 lines): Blur Background when modal active
 
 ---
