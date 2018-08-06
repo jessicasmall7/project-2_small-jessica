@@ -2,7 +2,6 @@
 // ========================================
 
 .button {
-
   &--primary {
     @include button;
     margin: auto;
@@ -47,4 +46,11 @@
     margin-right: $spacer-m;
     float: left;
   }
+}
+
+.submit {
+  width: 150px;
+  margin: 0;
+  margin-top: $spacer-m;
+  margin-right: $spacer-s;
 }

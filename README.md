@@ -42,7 +42,8 @@ My apostrophe's seem to be showing as weird characters when I upload to my web h
 
 #### Resources
 - [Social Icons](https://simpleicons.org/)
--
+- [Form Reset](https://www.w3schools.com/tags/att_button_type.asp)
+- [SVG Icons for About Page](https://icomoon.io/app/#/select)
 
 #### Deductions
 I have reviewed the list of deductions for this project and in the syllabus.

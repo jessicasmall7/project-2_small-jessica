@@ -160,6 +160,20 @@ body {
   }
 }
 
+.contact {
+  width: 290px;
+  margin: auto;
+  padding: $spacer-m;
+
+  @include media($medium) {
+    width: 500px;
+  }
+
+  @include media($extra-large) {
+    width: 620px;
+  }
+}
+
 .hide {
   visibility: hidden;
   height: 0px;
