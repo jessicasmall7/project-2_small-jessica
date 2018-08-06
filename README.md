@@ -38,7 +38,7 @@ My apostrophe's seem to be showing as weird characters when I upload to my web h
 
 ---
 
-## Project 2 - Part 3
+## Project 2 - Part 5
 
 #### Resources
 - [Social Icons](https://simpleicons.org/)
@@ -49,6 +49,13 @@ My apostrophe's seem to be showing as weird characters when I upload to my web h
 I have reviewed the list of deductions for this project and in the syllabus.
 
 #### Comments
+Need to resolve a few issues: testimonial centering, footer cutting off content, and "Submit" button swapping places with cancel.
 
+To Do:
+jQuery plugins (2):
+- Hamburger menu
+- Popup
+Custom jQuery (5 lines): disable button
+Custom Javascript (5 lines): blur background
 
 ---
