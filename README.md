@@ -64,8 +64,8 @@ I have reviewed the list of deductions for this project and in the syllabus.
 Need to resolve a few issues: testimonial centering, footer cutting off content, and "Submit" button swapping places with cancel.
 
 To Do:
-- jQuery plugins: blur background/modal, one extra
-- Custom Javascript (5 lines): Blur Background when modal active
+- jQuery plugins
+- Custom Javascript
 
 ---
 
@@ -80,9 +80,9 @@ To Do:
 I have reviewed the list of deductions for this project and in the syllabus.
 
 #### Comments
-- jQuery plugin 1: "Submit" button disabled until form is filled out
+- jQuery plugin 1: TBD
 - jQuery plugin 2: Login modal pops up on click, blurs background
-- Custom jQuery: Hamburger menu activated in small viewport, drop down shown on click.
-- Custom Javascript: text appears on hover?
+- Custom jQuery: Hamburger menu activated in small viewport, drop down shown on click. Submit button on contact form is disabled until form is filled out.
+- Custom Javascript: TBD (text appears on hover)
 
 ---
