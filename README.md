@@ -6,6 +6,15 @@
 #### Link to website
 [Website Link](http://jessicasmalldesign.com/project-2)
 
+#### Link to W3C Validator
+[W3C Validator Link](www.google.com)
+
+#### Link to HTML5 Outliner
+[HTML5 Outliner Home](www.google.com)
+[HTML5 Outliner About](www.google.com)
+[HTML5 Outliner Contact](www.google.com)
+
+
 #### Instructions on how to view
 1. `git clone` the repository to view it locally.
 2. Use `sass --watch sass:css --style compressed` to get sass started.
@@ -15,7 +24,7 @@
 ## Project 2 - Part 3
 
 #### Resources
--[Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 #### Deductions
 I have reviewed the list of deductions for this project and in the syllabus.
@@ -44,6 +53,11 @@ My apostrophe's seem to be showing as weird characters when I upload to my web h
 - [Social Icons](https://simpleicons.org/)
 - [Form Reset](https://www.w3schools.com/tags/att_button_type.asp)
 - [SVG Icons for About Page](https://icomoon.io/app/#/select)
+- [SVG Hamburger Menu Icon](https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon)
+
+##### Plugins
+- [jQuery](www.google.com) - This is the hamburger menu, it can be found in the header of each page.
+- [jQuery](www.google.com) - This is the modal. It is visible when the "Login" link is clicked.
 
 #### Deductions
 I have reviewed the list of deductions for this project and in the syllabus.

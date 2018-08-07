@@ -1,0 +1,101 @@
+// Nav
+
+.nav {
+
+    @include media($large) {
+      padding-top: $spacer-m;
+      justify-content: space-between;
+      float: right;
+      text-align: right;
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // width: 100%;
+
+  @include media($extra-large) {
+    width: auto;
+  }
+}
+
+// Responsive
+
+.menu {
+  list-style: none;
+  display: none;
+  transition: 2s display ease-in-out;
+  text-align: center;
+
+  @include media($extra-large) {
+    display: flex;
+    align-items: center;
+  }
+
+  &--active {
+    background-color: $black;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+
+
+  &--item {
+    padding: $spacer-m;
+
+    & a {
+      text-decoration: none;
+
+      &:hover {
+        color: $blue;
+      }
+
+      @include media($extra-large) {
+        display: inline-block;
+      }
+
+    }
+  }
+
+  &-button {
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: $black;
+    font-family: $primary-font;
+    cursor: pointer;
+
+    @include media($extra-large) {
+      display: none;
+    }
+
+  }
+}
+
+.hamburger {
+  fill: $orange;
+}
+
+// Footer
+.nav__links-pages {
+  display: inline;
+  padding: $spacer-m;
+
+  @include media($large) {
+    padding-left: 8%;
+  }
+}
+
+.nav__links {
+  &-pages a {
+    text-decoration: none;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}

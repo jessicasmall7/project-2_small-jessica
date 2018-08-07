@@ -81,28 +81,6 @@ table {
     .header__logo {
       width: 350px; } }
 
-.nav {
-  width: 100%;
-  padding-top: 15px; }
-  @media only screen and (min-width: 1000px) {
-    .nav {
-      padding: 25px;
-      width: 50%;
-      float: right;
-      text-align: right; } }
-
-.nav__links-pages {
-  display: inline;
-  padding: 15px; }
-  @media only screen and (min-width: 1000px) {
-    .nav__links-pages {
-      padding-left: 8%; } }
-
-.nav__links-pages a {
-  text-decoration: none; }
-  .nav__links-pages a:hover {
-    color: #4d9bb4; }
-
 body {
   background-color: #fefcfb; }
 
@@ -308,7 +286,7 @@ body {
         margin-top: 25px; } }
 
 .footer--icon {
-  width: 30px;
+  width: 24px;
   padding: 10px;
   fill: #fefcfb; }
   .footer--icon__app {
@@ -317,7 +295,7 @@ body {
     @media only screen and (min-width: 1000px) {
       .footer--icon__app {
         visibility: visible;
-        height: 30px;
+        height: 24px;
         width: auto;
         padding: 10px; } }
 
@@ -393,8 +371,73 @@ a {
 
 .footer--text {
   color: #fefcfb;
-  font-size: 11pt;
+  font-size: 9pt;
   padding: 0; }
+
+@media only screen and (min-width: 1000px) {
+  .nav {
+    padding-top: 15px;
+    justify-content: space-between;
+    float: right;
+    text-align: right; } }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (min-width: 1280px) {
+    .nav-container {
+      width: auto; } }
+
+.menu {
+  list-style: none;
+  display: none;
+  transition: 2s display ease-in-out;
+  text-align: center; }
+  @media only screen and (min-width: 1280px) {
+    .menu {
+      display: flex;
+      align-items: center; } }
+  .menu--active {
+    background-color: #2b2a2c;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0; }
+  .menu--item {
+    padding: 15px; }
+    .menu--item a {
+      text-decoration: none; }
+      .menu--item a:hover {
+        color: #4d9bb4; }
+      @media only screen and (min-width: 1280px) {
+        .menu--item a {
+          display: inline-block; } }
+  .menu-button {
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 2px;
+    color: #2b2a2c;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer; }
+    @media only screen and (min-width: 1280px) {
+      .menu-button {
+        display: none; } }
+
+.hamburger {
+  fill: #ee7047; }
+
+.nav__links-pages {
+  display: inline;
+  padding: 15px; }
+  @media only screen and (min-width: 1000px) {
+    .nav__links-pages {
+      padding-left: 8%; } }
+
+.nav__links-pages a {
+  text-decoration: none; }
+  .nav__links-pages a:hover {
+    color: #4d9bb4; }
 
 .alert--error {
   font-family: "Open Sans", sans-serif;

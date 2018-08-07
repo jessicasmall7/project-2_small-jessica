@@ -26,37 +26,6 @@
   }
 }
 
-.nav {
-  width: 100%;
-  padding-top: $spacer-m;
-
-  @include media($large) {
-    padding: $spacer-lg;
-    width: 50%;
-    float: right;
-    text-align: right;
-  }
-}
-
-.nav__links-pages {
-  display: inline;
-  padding: $spacer-m;
-
-  @include media($large) {
-    padding-left: 8%;
-  }
-}
-
-.nav__links {
-  &-pages a {
-    text-decoration: none;
-
-    &:hover {
-      color: $blue;
-    }
-  }
-}
-
 body {
   background-color: $cream;
 }
@@ -319,7 +288,7 @@ body {
 }
 
 .footer--icon {
-  width: 30px;
+  width: 24px;
   padding: $spacer-s;
   fill: $cream;
 
@@ -329,7 +298,7 @@ body {
 
     @include media($large) {
       visibility: visible;
-      height: 30px;
+      height: 24px;
       width: auto;
       padding: $spacer-s;
     }
