@@ -56,8 +56,6 @@ My apostrophe's seem to be showing as weird characters when I upload to my web h
 - [SVG Hamburger Menu Icon](https://www.iconfinder.com/icons/134216/hamburger_lines_menu_icon)
 
 ##### Plugins
-- [jQuery](www.google.com) - This is the hamburger menu, it can be found in the header of each page.
-- [jQuery](www.google.com) - This is the modal. It is visible when the "Login" link is clicked.
 
 #### Deductions
 I have reviewed the list of deductions for this project and in the syllabus.
@@ -66,8 +64,25 @@ I have reviewed the list of deductions for this project and in the syllabus.
 Need to resolve a few issues: testimonial centering, footer cutting off content, and "Submit" button swapping places with cancel.
 
 To Do:
-- jQuery plugins (2): Hamburger Menu and Popup
-- Custom jQuery (5 lines): Disable Button
+- jQuery plugins: blur background/modal, one extra
 - Custom Javascript (5 lines): Blur Background when modal active
+
+---
+
+## Project 2 - Final
+
+#### Resources
+
+##### Plugins
+- [Modal](http://dev.vast.com/jquery-popup-overlay/)
+
+#### Deductions
+I have reviewed the list of deductions for this project and in the syllabus.
+
+#### Comments
+- jQuery plugin 1: "Submit" button disabled until form is filled out
+- jQuery plugin 2: Login modal pops up on click, blurs background
+- Custom jQuery: Hamburger menu activated in small viewport, drop down shown on click.
+- Custom Javascript: text appears on hover?
 
 ---

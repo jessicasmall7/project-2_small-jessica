@@ -27,29 +27,23 @@
         <p class="centered">Fill out the form below.</p>
           <form class="form">
             First Name<br>
-            <input class="input" type="text" placeholder="Jane" name="Name">
-            <br>
+            <input type="text" placeholder="First Name" name="firstname" autocomplete='firstname' required class="input" id="firstname"><br>
             Last Name<br>
-            <input class="input" type="text" placeholder="Smith" name="Name">
-            <br>
+            <input type="text" placeholder="Last Name" name="lastname" autocomplete='lastname' required class="input" id="lastname"><br>
             Phone Number<br>
-            <input class="input" type="text" placeholder="(111) 123-4567" name="Name">
-            <br>
+            <input type="tel" class="input" id="phone" placeholder="(111) 111-1111" name="phone" autocomplete='phone'><br>
             Email Address<br>
-            <input class="input" type="text" placeholder="jane@gymbuddy.com" name="Name">
-            <br>
+            <input type="email" placeholder="name@gymbuddy.com" name="email" autocomplete='email' required class="input" id="email"><br>
             Message<br>
-            <textarea class="input" type="text" placeholder="What's on your mind?" name="Name"></textarea>
-            <br>
+            <textarea type="text" placeholder="What's on your mind?" name="message" required class="input" id="message"></textarea><br>
             What's this about?<br>
             <select class="select">
               <option value="Question">Question</option>
               <option value="Comment">Comment</option>
               <option value="Urgent Matter">Urgent Matter</option>
-            </select>
-            <br>
-            <button type="submit" class="button--disabled submit">Submit</button>
-            <button type="reset" class="button--secondary submit">Cancel</button>
+            </select><br>
+            <button type="submit" class="button--disabled submit" value="submit" id="submit">Submit</button>
+            <button type="reset" class="button--secondary submit" value="reset" id="reset">Cancel</button>
           </form>
       </section>
     </main>
@@ -125,5 +119,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
