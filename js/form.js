@@ -1,3 +1,5 @@
+//Submit button is inactive until form is filled out, then becomes active
+
 $(function(){
   $('.input').keyup(function() {
 

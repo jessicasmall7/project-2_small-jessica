@@ -108,6 +108,8 @@ body {
     width: 90%;
     margin: auto;
     padding: 25px; }
+    .main--about__text {
+      margin: 25px; }
     .main--about__features {
       padding: 0px;
       margin: 0px;

@@ -59,6 +59,10 @@ body {
     margin: auto;
     padding: $spacer-lg;
 
+    &__text {
+      margin: $spacer-lg;
+    }
+
     &__features {
       padding: 0px;
       margin: 0px;
