@@ -157,8 +157,7 @@ body {
     margin: 15px; }
     @media only screen and (min-width: 1000px) {
       .main__section--testimonial {
-        width: 40%;
-        float: left; } }
+        width: 40%; } }
 
 .contact {
   width: 290px;
@@ -237,21 +236,32 @@ body {
       display: block;
       float: left; } }
 
-.testimonial {
+.grid--container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 25px;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto; }
+  @media only screen and (min-width: 1000px) {
+    .grid--container {
+      grid-template-columns: auto auto; } }
+.grid--item {
   display: block;
   width: 170px;
   margin: auto;
-  padding: 15px; }
+  padding: 10px; }
 
 .chip {
   width: 90%;
+  max-width: 400px;
   margin: auto;
   text-align: center;
   padding-bottom: 15px; }
   @media only screen and (min-width: 1000px) {
     .chip {
       width: 100%;
-      max-width: 400px; } }
+      max-width: 500px; } }
 
 .footer {
   background-color: #2b2a2c;
@@ -286,8 +296,9 @@ body {
         margin-top: 25px; } }
 
 .footer--icon {
-  width: 24px;
-  padding: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
   fill: #fefcfb; }
   .footer--icon__app {
     visibility: hidden;
@@ -295,9 +306,9 @@ body {
     @media only screen and (min-width: 1000px) {
       .footer--icon__app {
         visibility: visible;
-        height: 24px;
+        height: 30px;
         width: auto;
-        padding: 10px; } }
+        padding: 5px; } }
 
 h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;

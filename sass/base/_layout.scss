@@ -123,7 +123,6 @@ body {
 
       @include media($large) {
         width: 40%;
-        float: left;
       }
     }
   }
@@ -226,22 +225,38 @@ body {
   }
 }
 
-.testimonial {
-  display: block;
-  width: 170px;
-  margin: auto;
-  padding: $spacer-m;
+.grid {
+  &--container {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: $spacer-lg;
+    display: grid;
+    grid-column-gap: $spacer-s;
+    grid-template-columns: auto;
+
+    @include media($large) {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  &--item {
+    display: block;
+    width: 170px;
+    margin: auto;
+    padding: $spacer-s;
+  }
 }
 
 .chip {
   width: 90%;
+  max-width: 400px;
   margin: auto;
   text-align: center;
   padding-bottom: $spacer-m;
 
   @include media($large) {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
   }
 }
 
@@ -288,8 +303,9 @@ body {
 }
 
 .footer--icon {
-  width: 24px;
-  padding: $spacer-s;
+  width: 30px;
+  height: 30px;
+  padding: $spacer-xs;
   fill: $cream;
 
   &__app {
@@ -298,9 +314,9 @@ body {
 
     @include media($large) {
       visibility: visible;
-      height: 24px;
+      height: 30px;
       width: auto;
-      padding: $spacer-s;
+      padding: $spacer-xs;
     }
   }
 }
