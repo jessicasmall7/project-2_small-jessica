@@ -87,6 +87,16 @@ a {
   }
 }
 
+.block {
+  display: block;
+  text-align: center;
+  margin-top: $spacer-m;
+
+  @include media($extra-large) {
+    float: left;
+  }
+}
+
 .centered {
   text-align: center;
 }

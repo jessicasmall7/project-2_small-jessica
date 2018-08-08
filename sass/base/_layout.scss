@@ -19,10 +19,10 @@
 }
 
 .header__logo {
-  width: 275px;
+  width: 255px;
 
   @include media($medium) {
-    width: 350px;
+    width: 340px;
   }
 }
 
@@ -165,50 +165,6 @@ body {
   }
 }
 
-.block {
-  display: block;
-  text-align: center;
-  margin-top: $spacer-m;
-
-  @include media($extra-large) {
-    float: left;
-  }
-}
-
-.orange {
-    background-color: $orange;
-}
-
-.blue {
-    background-color: $blue;
-}
-
-.grey {
-    background-color: $grey;
-}
-
-.cream {
-    background-color: $cream;
-}
-
-.black {
-  background-color: $black;
-  border: 2px;
-  border-color: $cream;
-}
-
-.darkBlue {
-  background-color: $darkBlue;
-}
-
-.red {
-  background-color: $red;
-}
-
-.green {
-  background-color: $green;
-}
-
 .icon {
   visibility: hidden;
   width: 0px;
@@ -247,18 +203,6 @@ body {
   }
 }
 
-.chip {
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  padding-bottom: $spacer-m;
-
-  @include media($large) {
-    width: 100%;
-    max-width: 500px;
-  }
-}
 
 .footer {
   background-color: $black;

@@ -3,7 +3,7 @@
 .nav {
 
     @include media($large) {
-      padding-top: $spacer-m;
+      padding-top: $spacer-s;
       justify-content: space-between;
       float: right;
       text-align: right;

@@ -2,6 +2,17 @@
 // ========================================
 
 .chip {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: $spacer-m;
+
+  @include media($large) {
+    width: 100%;
+    max-width: 500px;
+  }
+
   &--primary {
     @include chip;
     background-color: $orange;
