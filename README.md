@@ -41,7 +41,7 @@ Remove blue focus outline from form input, text area, and select box.
 [Modal](http://dev.vast.com/jquery-popup-overlay/): Login modal will pop up on click and blur background.
 
 ##### Plugin 2
-["Download" Pop Up](http://dev.vast.com/jquery-popup-overlay/): Download pop up will appear after 8 seconds.
+[Text Rotator](http://www.thepetedesign.com/demos/jquery_super_simple_text_rotator_demo.html): Header on home page rotates through the different things you can sign up for with the app.
 
 #### Deductions
 I have reviewed the list of deductions for this project and in the syllabus.
