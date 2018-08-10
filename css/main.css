@@ -578,4 +578,47 @@ a {
   font-size: 13pt;
   color: #ee7047; }
 
+#my_popup {
+  background-color: #2b2a2c;
+  width: 80%;
+  border-radius: 10px;
+  padding: 25px; }
+  @media only screen and (min-width: 700px) {
+    #my_popup {
+      width: 425px;
+      padding: 15px; } }
+
+.login {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10pt;
+  color: #bdbdbd; }
+
+.logininput {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  border-color: #bdbdbd;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px;
+  width: 90%;
+  height: 20px;
+  margin-bottom: 15px;
+  color: #bdbdbd;
+  background: transparent;
+  font-size: 12pt; }
+  @media only screen and (min-width: 700px) {
+    .logininput {
+      width: 400px; } }
+
+.loginbutton {
+  width: 130px;
+  margin: 5px; }
+  @media only screen and (min-width: 700px) {
+    .loginbutton {
+      width: 190px;
+      margin: 10px; } }
+  @media only screen and (min-width: 1280px) {
+    .loginbutton {
+      float: none; } }
+
 /*# sourceMappingURL=main.css.map */

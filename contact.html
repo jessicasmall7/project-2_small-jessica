@@ -17,10 +17,23 @@
         <ul class="menu">
           <li class="menu--item"><a href="about.html">How It Works</a></li>
           <li class="menu--item"><a href="contact.html">Contact Us</a></li>
-          <li class="menu--item"><a href="#">Login</a></li>
+          <li class="menu--item my_popup_open"><a href="#">Login</a></li>
         </ul>
       </nav>
     </header>
+    <!--jQuery plugin 1-->
+    <div id="my_popup">
+      <h1 class="centered">Login</h1>
+        <form class="login">
+          Username<br>
+          <input class="logininput" type="text" placeholder="Username" name="firstname"><br>
+          Password<br>
+          <input class="logininput" type="password" placeholder="Password" name="lastname"><br>
+        <button class="button--primary loginbutton">Login</button>
+        <button class="button--secondary loginbutton my_popup_close">Cancel</button>
+      </form>
+    </div>
+    <!--jQuery plugin 1 END-->
     <main class="main">
       <section class="contact">
         <h1 class="centered">Contact Us</h1>
@@ -60,7 +73,7 @@
             <a href="contact.html">Contact Us</a>
           </li>
           <li class="nav__links-pages">
-            <a href="#">Login</a>
+            <a class="my_popup_open" href="#">Login</a>
           </li>
         </ul>
       </div>
@@ -121,5 +134,6 @@
     <script src="js/nav.js"></script>
     <script src="js/form.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
   </body>
 </html>

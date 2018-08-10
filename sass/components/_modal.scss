@@ -1,0 +1,53 @@
+// Login Modal
+
+#my_popup {
+  background-color: $black;
+  width: 80%;
+  border-radius: 10px;
+  padding: $spacer-lg;
+
+  @include media($medium) {
+    width: 425px;
+    padding: $spacer-m;
+  }
+
+}
+
+// Label Styling
+.login {
+  font-family: $secondary-font;
+  font-size: 10pt;
+  color: $grey;
+}
+
+// Basic Form Input Styling
+.logininput {
+  @include form;
+  width: 90%;
+  height: 20px;
+  margin-bottom: $spacer-m;
+  color: $grey;
+  background: transparent;
+  font-size: 12pt;
+
+  @include media($medium) {
+    width: 400px;
+  }
+}
+
+
+// Buttons
+
+.loginbutton {
+  width: 130px;
+  margin: $spacer-xs;
+
+  @include media($medium) {
+    width: 190px;
+    margin: $spacer-s;
+  }
+
+  @include media ($extra-large) {
+    float: none;
+  }
+}

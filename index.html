@@ -20,10 +20,23 @@
         <ul class="menu">
           <li class="menu--item"><a href="about.html">How It Works</a></li>
           <li class="menu--item"><a href="contact.html">Contact Us</a></li>
-          <li class="menu--item"><a href="#">Login</a></li>
+          <li class="menu--item my_popup_open"><a href="#">Login</a></li>
         </ul>
       </nav>
     </header>
+    <!--jQuery plugin 1-->
+    <div id="my_popup">
+      <h1 class="centered">Login</h1>
+        <form class="login">
+          Username<br>
+          <input class="logininput" type="text" placeholder="Username" name="firstname"><br>
+          Password<br>
+          <input class="logininput" type="password" placeholder="Password" name="lastname"><br>
+        <button class="button--primary loginbutton">Login</button>
+        <button class="button--secondary loginbutton my_popup_close">Cancel</button>
+      </form>
+    </div>
+    <!--jQuery plugin 1 END-->
     <main class="main">
       <section class="main__section--left">
         <img class="demo" alt="phone demo" src="images/phones.png">
@@ -33,7 +46,7 @@
         <h2 class="hide">GymBuddy’s workout calendar and class portal make it easy.</h2>
         <h3 class="hide">Because getting fit shouldn’t be complicated.</h3>
         <a href="https://www.apple.com/ios/app-store/"><div class="button--primary left">Download the App</div></a>
-        <div class="button--secondary">Login to Your Account</div>
+        <div class="button--secondary my_popup_open">Login to Your Account</div>
         <p class="block">*You must have an account to access the app.</p>
       </section>
     </main>
@@ -50,7 +63,7 @@
             <a href="contact.html">Contact Us</a>
           </li>
           <li class="nav__links-pages">
-            <a href="#">Login</a>
+            <a class="my_popup_open" href="#">Login</a>
           </li>
         </ul>
       </div>
@@ -136,5 +149,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/nav.js"></script>
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
