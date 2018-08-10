@@ -7,7 +7,9 @@
 [Website](www.jessicasmalldesign.com/project-2)
 
 #### Link to W3C's Validator
-[W3C Validator Link](https://validator.w3.org/)
+[W3C Validator Link - Home](https://validator.w3.org/nu/?doc=http%3A%2F%2Fjessicasmalldesign.com%2Fproject-2%2F)
+[W3C Validator Link - About](https://validator.w3.org/nu/?doc=http%3A%2F%2Fjessicasmalldesign.com%2Fproject-2%2Fabout.html)
+[W3C Validator Link - Contact](https://validator.w3.org/nu/?doc=http%3A%2F%2Fjessicasmalldesign.com%2Fproject-2%2Fcontact.html)
 
 #### Link to HTML5 Outliner
 [HTML5 Outliner](https://gsnedders.html5.org/outliner/)

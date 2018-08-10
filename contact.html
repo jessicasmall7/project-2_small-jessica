@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>Contact Us</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="css/main.css" rel="stylesheet">
     <link href="images/favicon.png" rel="icon" type="image/png">
   </head>
   <body>
     <header class="header">
-      <a href="index.html"><img class="header__logo" src="images/logo.png" atl="logo"></a>
+      <a href="index.html"><img class="header__logo" src="images/logo.png" alt="logo"></a>
       <nav class="nav">
         <div class="nav-container">
           <div class="menu-button">
@@ -22,6 +23,32 @@
         </ul>
       </nav>
     </header>
+    <main class="main">
+      <section class="contact">
+        <h1 class="centered">Contact Us</h1>
+        <p class="centered">Fill out the form below to get in touch with us!</p>
+          <form class="form">
+            First Name<br>
+            <input type="text" placeholder="First Name" name="firstname" required class="input" id="firstname"><br>
+            Last Name<br>
+            <input type="text" placeholder="Last Name" name="lastname" required class="input" id="lastname"><br>
+            Phone Number<br>
+            <input type="tel" class="input" id="phone" placeholder="(111) 111-1111" name="phone"><br>
+            Email Address<br>
+            <input type="email" placeholder="name@gymbuddy.com" name="email" required class="input" id="email"><br>
+            Message<br>
+            <textarea placeholder="What's on your mind?" name="message" required class="input" id="message"></textarea><br>
+            What's this about?<br>
+            <select class="select">
+              <option value="Question">Question</option>
+              <option value="Comment">Comment</option>
+              <option value="Urgent Matter">Urgent Matter</option>
+            </select><br>
+            <button type="submit" class="button--disabled submit" value="submit" id="submit">Submit</button>
+            <button type="reset" class="button--secondary submit" value="reset" id="reset">Cancel</button>
+          </form>
+      </section>
+    </main>
     <!--jQuery plugin 1-->
     <div id="my_popup">
       <h1 class="centered">Login</h1>
@@ -35,32 +62,6 @@
       </form>
     </div>
     <!--jQuery plugin 1 END-->
-    <main class="main">
-      <section class="contact">
-        <h1 class="centered">Contact Us</h1>
-        <p class="centered">Fill out the form below to get in touch with us!</p>
-          <form class="form">
-            First Name<br>
-            <input type="text" placeholder="First Name" name="firstname" autocomplete='firstname' required class="input" id="firstname"><br>
-            Last Name<br>
-            <input type="text" placeholder="Last Name" name="lastname" autocomplete='lastname' required class="input" id="lastname"><br>
-            Phone Number<br>
-            <input type="tel" class="input" id="phone" placeholder="(111) 111-1111" name="phone" autocomplete='phone'><br>
-            Email Address<br>
-            <input type="email" placeholder="name@gymbuddy.com" name="email" autocomplete='email' required class="input" id="email"><br>
-            Message<br>
-            <textarea type="text" placeholder="What's on your mind?" name="message" required class="input" id="message"></textarea><br>
-            What's this about?<br>
-            <select class="select">
-              <option value="Question">Question</option>
-              <option value="Comment">Comment</option>
-              <option value="Urgent Matter">Urgent Matter</option>
-            </select><br>
-            <button type="submit" class="button--disabled submit" value="submit" id="submit">Submit</button>
-            <button type="reset" class="button--secondary submit" value="reset" id="reset">Cancel</button>
-          </form>
-      </section>
-    </main>
     <footer class="footer">
       <div class="footer--nav">
         <ul>
