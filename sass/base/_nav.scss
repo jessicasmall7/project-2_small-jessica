@@ -1,7 +1,6 @@
 // Nav
 
 .nav {
-
     @include media($large) {
       padding-top: $spacer-s;
       justify-content: space-between;
@@ -14,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // width: 100%;
 
   @include media($extra-large) {
     width: auto;
@@ -42,8 +40,6 @@
     right: 0;
   }
 
-
-
   &--item {
     padding: $spacer-m;
 
@@ -57,7 +53,6 @@
       @include media($extra-large) {
         display: inline-block;
       }
-
     }
   }
 
@@ -72,7 +67,6 @@
     @include media($extra-large) {
       display: none;
     }
-
   }
 }
 

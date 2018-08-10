@@ -27,11 +27,6 @@
   }
 }
 
-.error {
-  border-color: $red;
-  color: $red;
-}
-
 // Select Form Input Styling
 .select {
   @include form;

@@ -1,6 +1,11 @@
 // Base Layout Stylesheet
 // ========================================
 
+body {
+  background-color: $cream;
+}
+
+// Header ===================
 .header {
   text-align: center;
   border-bottom: solid;
@@ -25,10 +30,7 @@
     width: 340px;
   }
 }
-
-body {
-  background-color: $cream;
-}
+// Header End ===================
 
 .main {
   padding-left: $spacer-xs;
@@ -64,9 +66,9 @@ body {
     }
 
     &__features {
+      visibility: hidden;
       padding: 0px;
       margin: 0px;
-      visibility: hidden;
       height: 0px;
       width: 0px;
 
@@ -132,20 +134,7 @@ body {
   }
 }
 
-.contact {
-  width: 290px;
-  margin: auto;
-  padding: $spacer-m;
-
-  @include media($medium) {
-    width: 500px;
-  }
-
-  @include media($extra-large) {
-    width: 620px;
-  }
-}
-
+// Home Page ===================
 .hide {
   visibility: hidden;
   height: 0px;
@@ -168,7 +157,9 @@ body {
     max-width: 420px;
   }
 }
+// Home Page End ===================
 
+// About Page ===================
 .icon {
   visibility: hidden;
   width: 0px;
@@ -206,8 +197,25 @@ body {
     padding: $spacer-s;
   }
 }
+// About Page End ===================
 
+// Contact Us Page ===================
+.contact {
+  width: 290px;
+  margin: auto;
+  padding: $spacer-m;
 
+  @include media($medium) {
+    width: 500px;
+  }
+
+  @include media($extra-large) {
+    width: 620px;
+  }
+}
+// Contact Us Page End ===================
+
+// Footer ===================
 .footer {
   background-color: $black;
   width: 100%;
@@ -268,3 +276,4 @@ body {
     }
   }
 }
+// Footer End ===================

@@ -17,13 +17,6 @@
     @include chip;
     background-color: $orange;
   }
-
-  &--secondary {
-    @include chip;
-    background-color: $blue;
-    display: block;
-    float: left;
-  }
 }
 
 .title {
